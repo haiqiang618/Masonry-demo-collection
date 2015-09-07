@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PrimaryViewController.h
 //  Masonry-demo-collection
 //
 //  Created by IOF－IOS2 on 15/9/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITableViewController
-
+@interface PrimaryViewController : UIViewController
 
 @end
-

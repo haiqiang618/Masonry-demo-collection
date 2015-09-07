@@ -14,5 +14,6 @@
 #import <Masonry.h>
 
 #import "Constants.h"
+#import "UIView+Masonry.h"
 
 #endif

@@ -7,6 +7,9 @@
 //
 
 #import "RootViewController.h"
+#import "PrimaryViewController.h"
+
+static NSString *cellIdentifier = @"masonryCell";
 
 @interface RootViewController ()
 
@@ -17,51 +20,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self configureUI];
+    [self initViews];
 }
 
-- (void)configureUI
+- (void)initViews
 {
-    WS(weakSelf);
-    UIView *view = [UIView new];
-    view.backgroundColor = [UIColor greenColor];
-    // 在做autolayout之前，一定要先将view添加到superview上，否则会报错
-    [self.view addSubview:view];
-    
-    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(weakSelf.view);
-        make.size.mas_equalTo(CGSizeMake(300, 300));
-    }];
-    
+    self.title = @"Masonry 学习";
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
 
-/**
- *  http://www.cocoachina.com/ios/20141219/10702.html
- */
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"初级";
+    }
+    if (indexPath.row == 1) {
+        cell.textLabel.text = @"敬请期待－－－中级";
+    }
+    if (indexPath.row == 2) {
+        cell.textLabel.text = @"敬请期待－－－高级";
+    }
+    return cell;
+}
 
-//首先在Masonry中能够添加autolayout约束有三个函数
-//- (NSArray *)mas_makeConstraints:(void(^)(MASConstraintMaker *make))block;
-//- (NSArray *)mas_updateConstraints:(void(^)(MASConstraintMaker *make))block;
-//- (NSArray *)mas_remakeConstraints:(void(^)(MASConstraintMaker *make))block;
-/*
- mas_makeConstraints 只负责新增约束 Autolayout不能同时存在两条针对于同一对象的约束 否则会报错
- mas_updateConstraints 针对上面的情况 会更新在block中出现的约束 不会导致出现两个相同约束的情况
- mas_remakeConstraints 则会清除之前的所有约束 仅保留最新的约束
- 三种函数善加利用 就可以应对各种情况了
- */
-
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//    return 3;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    return 2;
-//}
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == 0) {
+        PrimaryViewController *pvc = [PrimaryViewController new];
+        [self.navigationController pushViewController:pvc animated:YES];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

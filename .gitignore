@@ -16,6 +16,12 @@ DerivedData
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+profile
+*.moved-aside
+# Desktop Servies
+.DS_Store
+script/env.sh
+/Masonry-demo-collection.xcworkspace/xcshareddata/Masonry-demo-collection.xccheckout
 
 ## Other
 *.xccheckout

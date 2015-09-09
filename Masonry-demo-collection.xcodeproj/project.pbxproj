@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA458AB31B9EF24A00C39A6B /* IntermediateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA458AB21B9EF24A00C39A6B /* IntermediateViewController.m */; };
+		AA45A8971BA01D8600B4168C /* IntermediateSecondPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45A8961BA01D8600B4168C /* IntermediateSecondPartViewController.m */; };
 		AA655E2E1B9D3A33008D81C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E2D1B9D3A33008D81C5 /* main.m */; };
 		AA655E311B9D3A33008D81C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E301B9D3A33008D81C5 /* AppDelegate.m */; };
 		AA655E341B9D3A33008D81C5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E331B9D3A33008D81C5 /* RootViewController.m */; };
@@ -35,6 +36,8 @@
 		49F38400346CC768D17053BA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AA458AB11B9EF24A00C39A6B /* IntermediateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermediateViewController.h; sourceTree = "<group>"; };
 		AA458AB21B9EF24A00C39A6B /* IntermediateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediateViewController.m; sourceTree = "<group>"; };
+		AA45A8951BA01D8600B4168C /* IntermediateSecondPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermediateSecondPartViewController.h; sourceTree = "<group>"; };
+		AA45A8961BA01D8600B4168C /* IntermediateSecondPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediateSecondPartViewController.m; sourceTree = "<group>"; };
 		AA655E281B9D3A33008D81C5 /* Masonry-demo-collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Masonry-demo-collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA655E2C1B9D3A33008D81C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA655E2D1B9D3A33008D81C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				AAD2C64B1B9D7F5600FE7A52 /* PrimaryViewController.m */,
 				AA458AB11B9EF24A00C39A6B /* IntermediateViewController.h */,
 				AA458AB21B9EF24A00C39A6B /* IntermediateViewController.m */,
+				AA45A8951BA01D8600B4168C /* IntermediateSecondPartViewController.h */,
+				AA45A8961BA01D8600B4168C /* IntermediateSecondPartViewController.m */,
 				AA655E351B9D3A33008D81C5 /* Main.storyboard */,
 				AA655E381B9D3A33008D81C5 /* Images.xcassets */,
 				AA655E3A1B9D3A33008D81C5 /* LaunchScreen.xib */,
@@ -317,6 +322,7 @@
 				AAD2C64C1B9D7F5600FE7A52 /* PrimaryViewController.m in Sources */,
 				AA655E341B9D3A33008D81C5 /* RootViewController.m in Sources */,
 				AA655E311B9D3A33008D81C5 /* AppDelegate.m in Sources */,
+				AA45A8971BA01D8600B4168C /* IntermediateSecondPartViewController.m in Sources */,
 				AA655E2E1B9D3A33008D81C5 /* main.m in Sources */,
 				AA458AB31B9EF24A00C39A6B /* IntermediateViewController.m in Sources */,
 			);

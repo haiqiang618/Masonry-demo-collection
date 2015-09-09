@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "PrimaryViewController.h"
+#import "IntermediateViewController.h"
 
 static NSString *cellIdentifier = @"masonryCell";
 
@@ -48,7 +49,7 @@ static NSString *cellIdentifier = @"masonryCell";
         cell.textLabel.text = @"初级";
     }
     if (indexPath.row == 1) {
-        cell.textLabel.text = @"敬请期待－－－中级";
+        cell.textLabel.text = @"中级－－－计算器";
     }
     if (indexPath.row == 2) {
         cell.textLabel.text = @"敬请期待－－－高级";
@@ -62,6 +63,9 @@ static NSString *cellIdentifier = @"masonryCell";
     if (indexPath.row == 0) {
         PrimaryViewController *pvc = [PrimaryViewController new];
         [self.navigationController pushViewController:pvc animated:YES];
+    } else if (indexPath.row == 1) {
+        IntermediateViewController *ivc = [IntermediateViewController new];
+        [self.navigationController pushViewController:ivc animated:YES];
     }
 }
 

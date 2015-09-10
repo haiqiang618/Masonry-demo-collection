@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "PrimaryViewController.h"
 #import "IntermediateViewController.h"
+#import "IntermediateSecondPartViewController.h"
 
 static NSString *cellIdentifier = @"masonryCell";
 
@@ -31,7 +32,7 @@ static NSString *cellIdentifier = @"masonryCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 4;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -52,6 +53,9 @@ static NSString *cellIdentifier = @"masonryCell";
         cell.textLabel.text = @"中级－－－计算器";
     }
     if (indexPath.row == 2) {
+        cell.textLabel.text = @"中级－－－植物图谱";
+    }
+    if (indexPath.row == 3) {
         cell.textLabel.text = @"敬请期待－－－高级";
     }
     return cell;
@@ -66,6 +70,9 @@ static NSString *cellIdentifier = @"masonryCell";
     } else if (indexPath.row == 1) {
         IntermediateViewController *ivc = [IntermediateViewController new];
         [self.navigationController pushViewController:ivc animated:YES];
+    } else if (indexPath.row == 2) {
+        IntermediateSecondPartViewController *spvc = [IntermediateSecondPartViewController  new];
+        [self.navigationController pushViewController:spvc animated:YES];
     }
 }
 

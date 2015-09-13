@@ -18,6 +18,7 @@
 		AA655E481B9D3A33008D81C5 /* Masonry_demo_collectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E471B9D3A33008D81C5 /* Masonry_demo_collectionTests.m */; };
 		AAD2C6461B9D700A00FE7A52 /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C6451B9D700A00FE7A52 /* UIView+Masonry.m */; };
 		AAD2C64C1B9D7F5600FE7A52 /* PrimaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C64B1B9D7F5600FE7A52 /* PrimaryViewController.m */; };
+		B764C3621BA4FF3400C59F6D /* SideBySideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B764C3611BA4FF3400C59F6D /* SideBySideViewController.m */; };
 		C110DFD413646236599FFFF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF233D54BD2C37DE67B3200D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		AAD2C6451B9D700A00FE7A52 /* UIView+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry.m"; sourceTree = "<group>"; };
 		AAD2C64A1B9D7F5600FE7A52 /* PrimaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimaryViewController.h; sourceTree = "<group>"; };
 		AAD2C64B1B9D7F5600FE7A52 /* PrimaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryViewController.m; sourceTree = "<group>"; };
+		B764C3601BA4FF3400C59F6D /* SideBySideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBySideViewController.h; sourceTree = "<group>"; };
+		B764C3611BA4FF3400C59F6D /* SideBySideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBySideViewController.m; sourceTree = "<group>"; };
 		CF233D54BD2C37DE67B3200D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +124,8 @@
 				AA458AB21B9EF24A00C39A6B /* IntermediateViewController.m */,
 				AA45A8951BA01D8600B4168C /* IntermediateSecondPartViewController.h */,
 				AA45A8961BA01D8600B4168C /* IntermediateSecondPartViewController.m */,
+				B764C3601BA4FF3400C59F6D /* SideBySideViewController.h */,
+				B764C3611BA4FF3400C59F6D /* SideBySideViewController.m */,
 				AA655E351B9D3A33008D81C5 /* Main.storyboard */,
 				AA655E381B9D3A33008D81C5 /* Images.xcassets */,
 				AA655E3A1B9D3A33008D81C5 /* LaunchScreen.xib */,
@@ -319,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD2C6461B9D700A00FE7A52 /* UIView+Masonry.m in Sources */,
+				B764C3621BA4FF3400C59F6D /* SideBySideViewController.m in Sources */,
 				AAD2C64C1B9D7F5600FE7A52 /* PrimaryViewController.m in Sources */,
 				AA655E341B9D3A33008D81C5 /* RootViewController.m in Sources */,
 				AA655E311B9D3A33008D81C5 /* AppDelegate.m in Sources */,

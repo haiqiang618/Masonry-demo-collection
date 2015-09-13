@@ -10,6 +10,7 @@
 #import "PrimaryViewController.h"
 #import "IntermediateViewController.h"
 #import "IntermediateSecondPartViewController.h"
+#import "SideBySideViewController.h"
 
 static NSString *cellIdentifier = @"masonryCell";
 
@@ -56,8 +57,27 @@ static NSString *cellIdentifier = @"masonryCell";
         cell.textLabel.text = @"中级－－－植物图谱";
     }
     if (indexPath.row == 3) {
+        cell.textLabel.text = @"中级－－－并排label";
+    }
+    if (indexPath.row == 4) {
+        cell.textLabel.text = @"中级－－－自动居中";
+    }
+    if (indexPath.row == 5) {
+        cell.textLabel.text = @"中级－－－百分比宽度";
+    }
+    if (indexPath.row == 6) {
+        cell.textLabel.text = @"中级－－－UITableView";
+    }
+    if (indexPath.row == 7) {
+        cell.textLabel.text = @"中级－－－top(bottom)GuideView";
+    }
+    if (indexPath.row == 8) {
+        cell.textLabel.text = @"中级－－－自定义baseline";
+    }
+    if (indexPath.row == 9) {
         cell.textLabel.text = @"敬请期待－－－高级";
     }
+  
     return cell;
 }
 
@@ -73,6 +93,9 @@ static NSString *cellIdentifier = @"masonryCell";
     } else if (indexPath.row == 2) {
         IntermediateSecondPartViewController *spvc = [IntermediateSecondPartViewController  new];
         [self.navigationController pushViewController:spvc animated:YES];
+    } else if (indexPath.row == 3) {
+        SideBySideViewController *svc = [SideBySideViewController new];
+        [self.navigationController pushViewController:svc animated:YES];
     }
 }
 

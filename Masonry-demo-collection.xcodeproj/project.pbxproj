@@ -19,6 +19,7 @@
 		AAD2C6461B9D700A00FE7A52 /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C6451B9D700A00FE7A52 /* UIView+Masonry.m */; };
 		AAD2C64C1B9D7F5600FE7A52 /* PrimaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C64B1B9D7F5600FE7A52 /* PrimaryViewController.m */; };
 		B764C3621BA4FF3400C59F6D /* SideBySideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B764C3611BA4FF3400C59F6D /* SideBySideViewController.m */; };
+		B764C3651BA57BC500C59F6D /* UIView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = B764C3641BA57BC500C59F6D /* UIView+Additional.m */; };
 		C110DFD413646236599FFFF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF233D54BD2C37DE67B3200D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		AAD2C64B1B9D7F5600FE7A52 /* PrimaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryViewController.m; sourceTree = "<group>"; };
 		B764C3601BA4FF3400C59F6D /* SideBySideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBySideViewController.h; sourceTree = "<group>"; };
 		B764C3611BA4FF3400C59F6D /* SideBySideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBySideViewController.m; sourceTree = "<group>"; };
+		B764C3631BA57BC500C59F6D /* UIView+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additional.h"; sourceTree = "<group>"; };
+		B764C3641BA57BC500C59F6D /* UIView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additional.m"; sourceTree = "<group>"; };
 		CF233D54BD2C37DE67B3200D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +167,8 @@
 		AA655E521B9D58E7008D81C5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B764C3631BA57BC500C59F6D /* UIView+Additional.h */,
+				B764C3641BA57BC500C59F6D /* UIView+Additional.m */,
 				AAD2C6431B9D6FDE00FE7A52 /* Category */,
 				AA655E531B9D58FA008D81C5 /* Constants.h */,
 			);
@@ -330,6 +335,7 @@
 				AA655E311B9D3A33008D81C5 /* AppDelegate.m in Sources */,
 				AA45A8971BA01D8600B4168C /* IntermediateSecondPartViewController.m in Sources */,
 				AA655E2E1B9D3A33008D81C5 /* main.m in Sources */,
+				B764C3651BA57BC500C59F6D /* UIView+Additional.m in Sources */,
 				AA458AB31B9EF24A00C39A6B /* IntermediateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

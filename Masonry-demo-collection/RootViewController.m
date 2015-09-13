@@ -33,7 +33,7 @@ static NSString *cellIdentifier = @"masonryCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 8;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -57,24 +57,18 @@ static NSString *cellIdentifier = @"masonryCell";
         cell.textLabel.text = @"中级－－－植物图谱";
     }
     if (indexPath.row == 3) {
-        cell.textLabel.text = @"中级－－－并排label";
+        cell.textLabel.text = @"中级－－－并排label, 自动居中, 百分比宽度";
     }
     if (indexPath.row == 4) {
-        cell.textLabel.text = @"中级－－－自动居中";
-    }
-    if (indexPath.row == 5) {
-        cell.textLabel.text = @"中级－－－百分比宽度";
-    }
-    if (indexPath.row == 6) {
         cell.textLabel.text = @"中级－－－UITableView";
     }
-    if (indexPath.row == 7) {
+    if (indexPath.row == 5) {
         cell.textLabel.text = @"中级－－－top(bottom)GuideView";
     }
-    if (indexPath.row == 8) {
+    if (indexPath.row == 6) {
         cell.textLabel.text = @"中级－－－自定义baseline";
     }
-    if (indexPath.row == 9) {
+    if (indexPath.row == 7) {
         cell.textLabel.text = @"敬请期待－－－高级";
     }
   

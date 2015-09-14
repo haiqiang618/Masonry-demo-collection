@@ -12,6 +12,7 @@
 #import "IntermediateSecondPartViewController.h"
 #import "SideBySideViewController.h"
 #import "CustomTableViewController.h"
+#import "LayoutGuideViewController.h"
 
 static NSString *cellIdentifier = @"masonryCell";
 
@@ -34,7 +35,7 @@ static NSString *cellIdentifier = @"masonryCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 7;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -58,18 +59,18 @@ static NSString *cellIdentifier = @"masonryCell";
         cell.textLabel.text = @"中级－－－植物图谱";
     }
     if (indexPath.row == 3) {
-        cell.textLabel.text = @"中级－－－并排label, 自动居中, 百分比宽度";
+        cell.textLabel.text = @"中级－－－并排, 居中, 百分比";
     }
     if (indexPath.row == 4) {
         cell.textLabel.text = @"中级－－－UITableView";
     }
-//    if (indexPath.row == 5) {
-//        cell.textLabel.text = @"中级－－－top(bottom)GuideView";
-//    }
+    if (indexPath.row == 5) {
+        cell.textLabel.text = @"中级－－－top(bottom)GuideView";
+    }
 //    if (indexPath.row == 6) {
 //        cell.textLabel.text = @"中级－－－自定义baseline";
 //    }
-    if (indexPath.row == 5) {
+    if (indexPath.row == 6) {
         cell.textLabel.text = @"敬请期待－－－高级";
     }
   
@@ -94,6 +95,9 @@ static NSString *cellIdentifier = @"masonryCell";
     } else if (indexPath.row == 4) {
         CustomTableViewController *ctvc = [CustomTableViewController new];
         [self.navigationController pushViewController:ctvc animated:YES];
+    } else if (indexPath.row == 5) {
+        LayoutGuideViewController *lvc = [LayoutGuideViewController new];
+        [self.navigationController pushViewController:lvc animated:YES];
     }
 }
 

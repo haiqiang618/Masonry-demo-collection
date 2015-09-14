@@ -12,6 +12,7 @@
 		AA498EA71BA6B03400D9503D /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA498EA61BA6B03400D9503D /* CustomTableViewController.m */; };
 		AA498EAA1BA6B05300D9503D /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA498EA91BA6B05300D9503D /* CustomCell.m */; };
 		AA498EAD1BA6B06B00D9503D /* CustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA498EAC1BA6B06B00D9503D /* CustomModel.m */; };
+		AA498EB01BA6C19E00D9503D /* LayoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA498EAF1BA6C19E00D9503D /* LayoutGuideViewController.m */; };
 		AA655E2E1B9D3A33008D81C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E2D1B9D3A33008D81C5 /* main.m */; };
 		AA655E311B9D3A33008D81C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E301B9D3A33008D81C5 /* AppDelegate.m */; };
 		AA655E341B9D3A33008D81C5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E331B9D3A33008D81C5 /* RootViewController.m */; };
@@ -49,6 +50,8 @@
 		AA498EA91BA6B05300D9503D /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		AA498EAB1BA6B06B00D9503D /* CustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomModel.h; sourceTree = "<group>"; };
 		AA498EAC1BA6B06B00D9503D /* CustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModel.m; sourceTree = "<group>"; };
+		AA498EAE1BA6C19E00D9503D /* LayoutGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutGuideViewController.h; sourceTree = "<group>"; };
+		AA498EAF1BA6C19E00D9503D /* LayoutGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutGuideViewController.m; sourceTree = "<group>"; };
 		AA655E281B9D3A33008D81C5 /* Masonry-demo-collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Masonry-demo-collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA655E2C1B9D3A33008D81C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA655E2D1B9D3A33008D81C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				AA45A8961BA01D8600B4168C /* IntermediateSecondPartViewController.m */,
 				B764C3601BA4FF3400C59F6D /* SideBySideViewController.h */,
 				B764C3611BA4FF3400C59F6D /* SideBySideViewController.m */,
+				AA498EAE1BA6C19E00D9503D /* LayoutGuideViewController.h */,
+				AA498EAF1BA6C19E00D9503D /* LayoutGuideViewController.m */,
 				AA655E351B9D3A33008D81C5 /* Main.storyboard */,
 				AA655E381B9D3A33008D81C5 /* Images.xcassets */,
 				AA655E3A1B9D3A33008D81C5 /* LaunchScreen.xib */,
@@ -363,6 +368,7 @@
 				AA655E2E1B9D3A33008D81C5 /* main.m in Sources */,
 				B764C3651BA57BC500C59F6D /* UIView+Additional.m in Sources */,
 				AA458AB31B9EF24A00C39A6B /* IntermediateViewController.m in Sources */,
+				AA498EB01BA6C19E00D9503D /* LayoutGuideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

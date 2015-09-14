@@ -209,7 +209,7 @@ static const CGFloat IMAGE_SIZE = 32;
     [slideView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.contentView2.mas_bottom).with.offset(20);
         make.height.mas_equalTo(@(40));
-        make.width.mas_equalTo(@(220));
+        make.width.mas_equalTo(@((self.view.width-20)));
         make.centerX.mas_equalTo(totalContainerView.mas_centerX);
     }];
     
@@ -239,7 +239,7 @@ static const CGFloat IMAGE_SIZE = 32;
     _contentView3.backgroundColor = [UIColor purpleColor];
     [totalContainerView addSubview:_contentView3];
     
-    _widthConstraint = [NSLayoutConstraint constraintWithItem:self.contentView3 attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:288.0f];
+    _widthConstraint = [NSLayoutConstraint constraintWithItem:self.contentView3 attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:(self.view.width-20)];
     [self.contentView3 addConstraint:self.widthConstraint];
    
     _maxWidth = _widthConstraint.constant;

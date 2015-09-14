@@ -11,6 +11,7 @@
 #import "IntermediateViewController.h"
 #import "IntermediateSecondPartViewController.h"
 #import "SideBySideViewController.h"
+#import "CustomTableViewController.h"
 
 static NSString *cellIdentifier = @"masonryCell";
 
@@ -33,7 +34,7 @@ static NSString *cellIdentifier = @"masonryCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 6;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -59,9 +60,9 @@ static NSString *cellIdentifier = @"masonryCell";
     if (indexPath.row == 3) {
         cell.textLabel.text = @"中级－－－并排label, 自动居中, 百分比宽度";
     }
-//    if (indexPath.row == 4) {
-//        cell.textLabel.text = @"中级－－－UITableView";
-//    }
+    if (indexPath.row == 4) {
+        cell.textLabel.text = @"中级－－－UITableView";
+    }
 //    if (indexPath.row == 5) {
 //        cell.textLabel.text = @"中级－－－top(bottom)GuideView";
 //    }
@@ -90,6 +91,9 @@ static NSString *cellIdentifier = @"masonryCell";
     } else if (indexPath.row == 3) {
         SideBySideViewController *svc = [SideBySideViewController new];
         [self.navigationController pushViewController:svc animated:YES];
+    } else if (indexPath.row == 4) {
+        CustomTableViewController *ctvc = [CustomTableViewController new];
+        [self.navigationController pushViewController:ctvc animated:YES];
     }
 }
 

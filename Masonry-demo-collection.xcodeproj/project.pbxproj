@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		AA458AB31B9EF24A00C39A6B /* IntermediateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA458AB21B9EF24A00C39A6B /* IntermediateViewController.m */; };
 		AA45A8971BA01D8600B4168C /* IntermediateSecondPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA45A8961BA01D8600B4168C /* IntermediateSecondPartViewController.m */; };
+		AA498EA71BA6B03400D9503D /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA498EA61BA6B03400D9503D /* CustomTableViewController.m */; };
+		AA498EAA1BA6B05300D9503D /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA498EA91BA6B05300D9503D /* CustomCell.m */; };
+		AA498EAD1BA6B06B00D9503D /* CustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA498EAC1BA6B06B00D9503D /* CustomModel.m */; };
 		AA655E2E1B9D3A33008D81C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E2D1B9D3A33008D81C5 /* main.m */; };
 		AA655E311B9D3A33008D81C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E301B9D3A33008D81C5 /* AppDelegate.m */; };
 		AA655E341B9D3A33008D81C5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E331B9D3A33008D81C5 /* RootViewController.m */; };
@@ -40,6 +43,12 @@
 		AA458AB21B9EF24A00C39A6B /* IntermediateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediateViewController.m; sourceTree = "<group>"; };
 		AA45A8951BA01D8600B4168C /* IntermediateSecondPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermediateSecondPartViewController.h; sourceTree = "<group>"; };
 		AA45A8961BA01D8600B4168C /* IntermediateSecondPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediateSecondPartViewController.m; sourceTree = "<group>"; };
+		AA498EA51BA6B03400D9503D /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
+		AA498EA61BA6B03400D9503D /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
+		AA498EA81BA6B05300D9503D /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		AA498EA91BA6B05300D9503D /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		AA498EAB1BA6B06B00D9503D /* CustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomModel.h; sourceTree = "<group>"; };
+		AA498EAC1BA6B06B00D9503D /* CustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModel.m; sourceTree = "<group>"; };
 		AA655E281B9D3A33008D81C5 /* Masonry-demo-collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Masonry-demo-collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA655E2C1B9D3A33008D81C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA655E2D1B9D3A33008D81C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +102,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA498EA41BA6B01C00D9503D /* CustomTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AA498EA51BA6B03400D9503D /* CustomTableViewController.h */,
+				AA498EA61BA6B03400D9503D /* CustomTableViewController.m */,
+				AA498EA81BA6B05300D9503D /* CustomCell.h */,
+				AA498EA91BA6B05300D9503D /* CustomCell.m */,
+				AA498EAB1BA6B06B00D9503D /* CustomModel.h */,
+				AA498EAC1BA6B06B00D9503D /* CustomModel.m */,
+			);
+			path = CustomTableView;
+			sourceTree = "<group>";
+		};
 		AA655E1F1B9D3A33008D81C5 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				AA655E521B9D58E7008D81C5 /* Tools */,
+				AA498EA41BA6B01C00D9503D /* CustomTableView */,
 				AA655E2F1B9D3A33008D81C5 /* AppDelegate.h */,
 				AA655E301B9D3A33008D81C5 /* AppDelegate.m */,
 				AA655E321B9D3A33008D81C5 /* RootViewController.h */,
@@ -330,10 +353,13 @@
 			files = (
 				AAD2C6461B9D700A00FE7A52 /* UIView+Masonry.m in Sources */,
 				B764C3621BA4FF3400C59F6D /* SideBySideViewController.m in Sources */,
+				AA498EAA1BA6B05300D9503D /* CustomCell.m in Sources */,
 				AAD2C64C1B9D7F5600FE7A52 /* PrimaryViewController.m in Sources */,
 				AA655E341B9D3A33008D81C5 /* RootViewController.m in Sources */,
 				AA655E311B9D3A33008D81C5 /* AppDelegate.m in Sources */,
 				AA45A8971BA01D8600B4168C /* IntermediateSecondPartViewController.m in Sources */,
+				AA498EA71BA6B03400D9503D /* CustomTableViewController.m in Sources */,
+				AA498EAD1BA6B06B00D9503D /* CustomModel.m in Sources */,
 				AA655E2E1B9D3A33008D81C5 /* main.m in Sources */,
 				B764C3651BA57BC500C59F6D /* UIView+Additional.m in Sources */,
 				AA458AB31B9EF24A00C39A6B /* IntermediateViewController.m in Sources */,

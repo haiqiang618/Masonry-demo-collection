@@ -240,13 +240,13 @@ static const CGFloat IMAGE_SIZE = 32;
     [totalContainerView addSubview:_contentView3];
     
     _widthConstraint = [NSLayoutConstraint constraintWithItem:self.contentView3 attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:288.0f];
-    
+    [self.contentView3 addConstraint:self.widthConstraint];
+   
     _maxWidth = _widthConstraint.constant;
     
     [weakSelf.contentView3 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(totalContainerView.mas_left).with.offset(10);
         make.top.equalTo(describe3.mas_bottom).with.offset(10);
-        make.width.mas_equalTo(@(_maxWidth));
         make.height.mas_equalTo(@80.f);
     }];
    
@@ -262,7 +262,7 @@ static const CGFloat IMAGE_SIZE = 32;
         make.bottom.equalTo(weakSelf.contentView3.mas_bottom);
         
         //宽度为父view的宽度的一半
-        make.width.mas_equalTo(@(_maxWidth/2.0));
+        make.width.mas_equalTo(weakSelf.contentView3.mas_width).with.multipliedBy(0.5f);
     }];
     
     UISlider *slider = [UISlider new];
@@ -288,8 +288,7 @@ static const CGFloat IMAGE_SIZE = 32;
 - (void)modifyContainerViewWidth:(UISlider *)sender
 {
     if (sender.value) {
-        self.contentView3.width = sender.value * _maxWidth;
-        _subView3.width = sender.value * _maxWidth * 0.5;
+        _widthConstraint.constant = sender.value * _maxWidth;
     }
 }
 

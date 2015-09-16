@@ -14,6 +14,7 @@
 #import "CustomTableViewController.h"
 #import "LayoutGuideViewController.h"
 #import "BaseLineViewController.h"
+#import "ComplexCellViewController.h"
 
 static NSString *cellIdentifier = @"masonryCell";
 
@@ -35,8 +36,8 @@ static NSString *cellIdentifier = @"masonryCell";
 - (void)initViews
 {
     self.title = @"Masonry 学习";
-    self.dataArray = @[@"初级", @"中级－－－计算器", @"中级－－－植物图谱", @"中级－－－并排, 居中, 百分比", @"中级－－－UITableView", @"中级－－－top(bottom)GuideView", @"中级－－－自定义baseline", @"敬请期待－－－高级"];
-    self.classArray = @[@"PrimaryViewController",@"IntermediateViewController",@"IntermediateSecondPartViewController",@"SideBySideViewController",@"CustomTableViewController",@"LayoutGuideViewController",@"BaseLineViewController",@""];
+    self.dataArray = @[@"初级", @"中级－－－计算器", @"中级－－－植物图谱", @"中级－－－并排, 居中, 百分比", @"中级－－－UITableView", @"中级－－－top(bottom)GuideView", @"中级－－－自定义baseline", @"中级－－－Masonry设计复合型cell",@"敬请期待－－－高级(集成sunnyxx的)"];
+    self.classArray = @[@"PrimaryViewController",@"IntermediateViewController",@"IntermediateSecondPartViewController",@"SideBySideViewController",@"CustomTableViewController",@"LayoutGuideViewController",@"BaseLineViewController",@"ComplexCellViewController", @""];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -22,6 +22,8 @@
 		AA655E391B9D3A33008D81C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA655E381B9D3A33008D81C5 /* Images.xcassets */; };
 		AA655E3C1B9D3A33008D81C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA655E3A1B9D3A33008D81C5 /* LaunchScreen.xib */; };
 		AA655E481B9D3A33008D81C5 /* Masonry_demo_collectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA655E471B9D3A33008D81C5 /* Masonry_demo_collectionTests.m */; };
+		AA6846711BA9198D004AD37F /* ComplexCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6846701BA9198D004AD37F /* ComplexCellViewController.m */; };
+		AA6846741BA91A2F004AD37F /* ComplexTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6846731BA91A2F004AD37F /* ComplexTableViewCell.m */; };
 		AAD2C6461B9D700A00FE7A52 /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C6451B9D700A00FE7A52 /* UIView+Masonry.m */; };
 		AAD2C64C1B9D7F5600FE7A52 /* PrimaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C64B1B9D7F5600FE7A52 /* PrimaryViewController.m */; };
 		B764C3621BA4FF3400C59F6D /* SideBySideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B764C3611BA4FF3400C59F6D /* SideBySideViewController.m */; };
@@ -73,6 +75,10 @@
 		AA655E471B9D3A33008D81C5 /* Masonry_demo_collectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Masonry_demo_collectionTests.m; sourceTree = "<group>"; };
 		AA655E511B9D520E008D81C5 /* Masonry-demo-collection.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Masonry-demo-collection.pch"; sourceTree = "<group>"; };
 		AA655E531B9D58FA008D81C5 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		AA68466F1BA9198D004AD37F /* ComplexCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexCellViewController.h; sourceTree = "<group>"; };
+		AA6846701BA9198D004AD37F /* ComplexCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexCellViewController.m; sourceTree = "<group>"; };
+		AA6846721BA91A2F004AD37F /* ComplexTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexTableViewCell.h; sourceTree = "<group>"; };
+		AA6846731BA91A2F004AD37F /* ComplexTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexTableViewCell.m; sourceTree = "<group>"; };
 		AAD2C6441B9D700A00FE7A52 /* UIView+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Masonry.h"; sourceTree = "<group>"; };
 		AAD2C6451B9D700A00FE7A52 /* UIView+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry.m"; sourceTree = "<group>"; };
 		AAD2C64A1B9D7F5600FE7A52 /* PrimaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimaryViewController.h; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 			children = (
 				AA655E521B9D58E7008D81C5 /* Tools */,
 				AA498EA41BA6B01C00D9503D /* CustomTableView */,
+				AA68466E1BA91972004AD37F /* ComplexCellViewController */,
 				AA498EB41BA6C71600D9503D /* BaselineView */,
 				AA655E2F1B9D3A33008D81C5 /* AppDelegate.h */,
 				AA655E301B9D3A33008D81C5 /* AppDelegate.m */,
@@ -219,6 +226,17 @@
 				AA655E531B9D58FA008D81C5 /* Constants.h */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		AA68466E1BA91972004AD37F /* ComplexCellViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA68466F1BA9198D004AD37F /* ComplexCellViewController.h */,
+				AA6846701BA9198D004AD37F /* ComplexCellViewController.m */,
+				AA6846721BA91A2F004AD37F /* ComplexTableViewCell.h */,
+				AA6846731BA91A2F004AD37F /* ComplexTableViewCell.m */,
+			);
+			path = ComplexCellViewController;
 			sourceTree = "<group>";
 		};
 		AAD2C6431B9D6FDE00FE7A52 /* Category */ = {
@@ -375,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA498EB71BA6C72A00D9503D /* ItemView.m in Sources */,
+				AA6846741BA91A2F004AD37F /* ComplexTableViewCell.m in Sources */,
 				AAD2C6461B9D700A00FE7A52 /* UIView+Masonry.m in Sources */,
 				AA498EB31BA6C6A000D9503D /* BaseLineViewController.m in Sources */,
 				B764C3621BA4FF3400C59F6D /* SideBySideViewController.m in Sources */,
@@ -387,6 +406,7 @@
 				AA498EAD1BA6B06B00D9503D /* CustomModel.m in Sources */,
 				AA655E2E1B9D3A33008D81C5 /* main.m in Sources */,
 				B764C3651BA57BC500C59F6D /* UIView+Additional.m in Sources */,
+				AA6846711BA9198D004AD37F /* ComplexCellViewController.m in Sources */,
 				AA458AB31B9EF24A00C39A6B /* IntermediateViewController.m in Sources */,
 				AA498EB01BA6C19E00D9503D /* LayoutGuideViewController.m in Sources */,
 			);
